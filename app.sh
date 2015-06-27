@@ -7,6 +7,7 @@ local URL="https://pypi.python.org/packages/source/c/cffi/${FILE}"
 local XPYTHON="${HOME}/xtools/python2/${DROBO}"
 local BASE="${PWD}"
 export QEMU_LD_PREFIX="${TOOLCHAIN}/${HOST}/libc"
+export _PYTHON_HOST_PLATFORM="linux-armv5tejl"
 
 _download_tgz "${FILE}" "${URL}" "${FOLDER}"
 pushd "target/${FOLDER}"
